@@ -1,0 +1,46 @@
+{
+	"interface": {
+		"filter_words": {
+			"source": ["Google Ads"]
+		},
+		"max_pages": 1,
+		"rows_start": 1,
+		"rows_end": 2,
+		"rows_all": 2
+	},
+	"permissions": {
+		"show_client": true
+	},
+	"dashboard": {
+		"all": "2",
+		"unpaid": "$35",
+		"new_this_month": "0",
+		"new_last_month": "0"
+	},
+	"clients": [
+		{
+			"client_id": "88888001fd67db3si1",
+			"name": "Appartments inc (Alex Brown)",
+			"main_phone": "+18137855558",
+			"source": "Google Ads",
+			"jobs": "1",
+			"appointments": "1",
+			"recalls": "0",
+			"total": "$0.00",
+			"paid": "$0.00",
+			"unpaid": "$0.00"
+		},
+		{
+			"client_id": "88888001fd67db3si2",
+			"name": "Tony Stobe",
+			"main_phone": "+18137898778",
+			"source": "Google Ads",
+			"jobs": "1",
+			"appointments": "1",
+			"recalls": "0",
+			"total": "$185.00",
+			"paid": "$150.00",
+			"unpaid": "$35.00"
+		}
+	]
+}

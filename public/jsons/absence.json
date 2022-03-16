@@ -1,0 +1,38 @@
+{
+	"permissions": {
+		"edit_absence": true
+	},
+	"absence": {
+		"absence_id": "88888001fd67db3si1",
+		"service_resource": "Mike",
+		"area": "TMP_FL",
+		"absence_start": "2021-07-05T10:00:00",
+		"absence_end": "2021-07-16T18:00:00",
+		"created_at": "05/04/2021 09:32am",
+		"created_by": "Alex",
+		"last_edited_at": "05/04/2021 10:34am",
+		"last_edited_by": "Alex"
+	},
+	"edit": [
+		{
+			"service_resource": "Mike",
+			"area": "TMP_FL"
+		},
+		{
+			"service_resource": "Alex",
+			"area": "MIA_FL"
+		},
+		{
+			"service_resource": "Joan",
+			"area": "HOU_TX"
+		},
+		{
+			"service_resource": "Peter",
+			"area": "TMP_FL"
+		},
+		{
+			"service_resource": "Steve",
+			"area": "JAX_FL"
+		}
+	]
+}

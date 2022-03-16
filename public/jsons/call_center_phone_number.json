@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "edit_phone_number": true
+  },
+  "phone_number": {
+    "phone_number_id": "88888001fd67db3si2",
+    "phone": "+1(454) 454-2255",
+    "active": "On",
+    "friendly_name": "Volt_TMP_LS",
+    "type": "Source",
+    "source": "Google Ads",
+    "company": "123 Appliance Repair",
+    "area": "TMP_FL",
+    "call_flow": "Standart",
+    "created_at": "05/04/2021 09:32am",
+    "created_by": "Alex",
+    "last_edited_at": "05/04/2021 10:34am",
+    "last_edited_by": "Alex"
+  },
+  "edit": {
+    "types": ["System", "Source"],
+    "sources": ["Google Ads", "Bing Ads"],
+    "companies": ["Appliance Repair", "Texas Appliance Repair"],
+    "areas": ["JAX_FL", "TMP_FL", "HOU_TX"],
+    "call_flows": ["Standart", "Texas"]
+  }
+}

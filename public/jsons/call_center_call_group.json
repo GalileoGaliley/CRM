@@ -1,0 +1,84 @@
+{
+  "permissions": {
+    "edit_call_group": true,
+    "show_dispatcher": true
+  },
+  "call_group": {
+    "call_group_id": "88888001fd67db3si1",
+    "name": "Standart",
+    "created_at": "05/04/2021 09:32am",
+    "created_by": "Alex",
+    "last_edited_at": "05/04/2021 10:34am",
+    "last_edited_by": "Alex"
+  },
+  "dispatchers": [
+    {
+      "dispatcher_id": "88888001fd67db3si1",
+      "name": "Sofi",
+      "user": "Sofi Gray",
+      "phone": "(454) 454-5555",
+      "is_phone": true,
+      "is_softphone": false,
+      "active": "Active"
+    },
+    {
+      "dispatcher_id": "88888001fd67db3si2",
+      "name": "Mary",
+      "user": "Mary Gray",
+      "phone": "(454) 454-5595",
+      "is_phone": true,
+      "is_softphone": false,
+      "active": "Inactive"
+    },
+    {
+      "dispatcher_id": "88888001fd67db3si3",
+      "name": "Alex",
+      "user": "Alex Gray",
+      "phone": "(455) 454-5595",
+      "is_phone": true,
+      "is_softphone": true,
+      "active": "Inactive"
+    }
+  ],
+  "call_flows": [
+    {
+      "call_flow_id": "88888001fd67db3si1",
+      "name": "Standart"
+    },
+    {
+      "call_flow_id": "88888001fd67db3si2",
+      "name": "Texas"
+    }
+  ],
+  "edit": {
+    "dispatchers": [
+      {
+        "dispatcher_id": "88888001fd67db3si4",
+        "name": "Sofi2",
+        "user": "Sofi Gray",
+        "phone": "(454) 454-5555",
+        "is_phone": true,
+        "is_softphone": false,
+        "active": "Active"
+      },
+      {
+        "dispatcher_id": "88888001fd67db3si5",
+        "name": "Mary2",
+        "user": "Mary Gray",
+        "phone": "(454) 454-5595",
+        "is_phone": true,
+        "is_softphone": false,
+        "active": "Inactive"
+      },
+      {
+        "dispatcher_id": "88888001fd67db3si6",
+        "name": "Alex2",
+        "user": "Alex Gray",
+        "phone": "(455) 454-5595",
+        "is_phone": true,
+        "is_softphone": true,
+        "active": "Inactive"
+      }
+    ]
+  }
+}

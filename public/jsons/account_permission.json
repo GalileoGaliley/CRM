@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "edit_account_permission": true,
+    "show_account": true
+  },
+  "permission": {
+    "account_permission_id": "88888001fd67db3si1",
+    "name": "Standart",
+    "created_at": "05/04/2021 09:32am",
+    "created_by": "Alex",
+    "last_edited_at": "05/04/2021 10:34am",
+    "last_edited_by": "Alex",
+    "actions": ["Show Appointment", "Show Job"]
+  },
+  "accounts": [
+    {
+      "account_id": "88888001fd67db3si1",
+      "Name": "Texas",
+      "owner": "Alex",
+      "status": "Active"
+    },
+    {
+      "account_id": "88888001fd67db3si1",
+      "Name": "Florida Appliances",
+      "owner": "Mike",
+      "status": "Pending"
+    },
+    {
+      "account_id": "88888001fd67db3si1",
+      "Name": "Appliance Repair",
+      "owner": "Steve",
+      "status": "Inactive"
+    }
+  ],
+  "edit": {
+    "actions": ["Add Appointment", "Add User", "Show User"]
+  }
+}

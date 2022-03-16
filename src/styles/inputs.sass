@@ -1,0 +1,179 @@
+@import "mixins"
+
+input,
+button,
+textarea,
+select
+  display: block
+  width: 100%
+  padding: 7px 15px
+  appearance: none
+  border: none
+  border-radius: 5px
+  font: 1em Roboto, sans-serif
+
+  &._zeroed
+    width: auto
+    padding: 0
+    background: none !important
+    color: #000
+    border-radius: 0
+    border: none !important
+
+  &._wa
+    width: auto
+
+  &._rounded
+    padding: 13px !important
+    border-radius: 50px
+
+    svg
+      width: 18px !important
+
+input[type="text"],
+input[type="password"],
+textarea
+  border: 1px solid rgb(208, 211, 218)
+  background: #fff
+
+  &:disabled
+    color: #C3C6CB
+
+textarea
+  resize: vertical
+  min-height: 100px
+
+input[type="file"]
+  display: none
+
+button
+  cursor: pointer
+  background: #fff
+  color: #000
+
+  $button: &
+
+  &:disabled
+    opacity: .5
+    cursor: default
+
+  &._iconed
+    display: flex
+    align-items: center
+    gap: 15px
+
+    &.sb
+      justify-content: space-between
+
+    svg
+      width: 24px
+      fill: #000
+
+      &._rotated-90
+        transform: rotateZ(90deg)
+
+      &._rotated-180
+        transform: rotateZ(180deg)
+
+      &._rotated-270
+        transform: rotateZ(270deg)
+
+      &._mirrored-y
+        transform: rotateY(180deg)
+
+      @at-root #{$button}._zeroed._iconed._red svg
+        fill: #EB5757
+
+      @at-root #{$button}._zeroed._iconed._blue svg
+        fill: rgb(96, 147, 222)
+
+      @at-root #{$button}._zeroed._iconed._green svg
+        fill: #01B41F
+
+      @at-root #{$button}._zeroed._iconed._gray svg
+        fill: #8E8E93
+
+  &._rounded
+    border: 1px solid rgb(208, 211, 218)
+
+    svg
+      width: calc(1em + 2px)
+      fill: #8391AD
+
+    &._blue
+      svg
+        fill: #fff
+
+  &._blue,
+  &._green,
+  &._red,
+  &._gray
+    color: #fff
+    font-size: 15pt
+
+    &:not(._zeroed)
+      padding: 5px 30px
+
+    &:disabled
+      background: #bbb
+
+    svg
+      fill: #fff
+
+  &._blue
+    background: rgb(96, 147, 222)
+
+  &._green
+    background: #01B41F
+
+  &._red
+    background: #EB5757
+
+  &._bordered
+    border: 2px solid transparent
+    background: transparent
+
+    &:disabled
+      border-color: #ccc !important
+      background: transparent
+      color: #ccc !important
+
+    &._blue
+      border-color: rgb(96, 147, 222)
+      color: rgb(96, 147, 222)
+
+      &._iconed svg
+        fill: rgb(96, 147, 222)
+
+    &._green
+      border-color: #219653
+      color: #219653
+
+    &._red
+      border-color: #EB5757
+      color: #EB5757
+
+.form-field
+  display: flex
+  align-items: center
+  gap: 10px
+
+  &._iconed
+    position: relative
+    z-index: 1
+
+    & > input
+      padding-right: 45px
+
+    & > button._iconed
+      position: absolute
+      right: 15px
+      width: 21px
+      top: 50%
+      transform: translateY(-50%)
+
+      &.__noclick
+        pointer-events: none
+
+      svg
+        fill: #8E94B1

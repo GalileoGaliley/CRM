@@ -1,0 +1,72 @@
+{
+  "interface": {
+    "filter_words": {
+      "source": ["Google Ads", "Bing Ads", "Organic"],
+      "status": ["Active", "Inactive", "Pending"]
+    },
+    "max_pages": 1,
+    "rows_start": 1,
+    "rows_end": 3,
+    "rows_all": 3
+  },
+  "permissions": {
+    "show_account": true,
+    "add_account": true
+  },
+  "accounts": [
+    {
+      "account_id": "88888001fd67db3si1",
+      "name": "Texas",
+      "email": "texas@appliancerepair.com",
+      "owner": "Alex",
+      "created_at": "05/04/2021 09:32am",
+      "users": "17",
+      "phone_numbers": "12",
+      "source": "Google Ads",
+      "status": "Active"
+    },
+    {
+      "account_id": "88888001fd67db3si1",
+      "name": "Florida Appliances",
+      "email": "fl@appliancerepair.com",
+      "owner": "Mike",
+      "created_at": "09/03/2021 09:32am",
+      "users": "7",
+      "phone_numbers": "2",
+      "source": "Bing Ads",
+      "status": "Pending"
+    },
+    {
+      "account_id": "88888001fd67db3si1",
+      "name": "Appliance Repair",
+      "email": "ar@appliancerepair.com",
+      "owner": "Mike",
+      "created_at": "11/01/2021 09:32am",
+      "users": "37",
+      "phone_numbers": "22",
+      "source": "Organic",
+      "status": "Inactive"
+    }
+  ],
+  "edit": {
+    "status": ["Active", "Inactive", "Pending"],
+    "owners": [
+      {
+        "user_id": "88888001fd67db3si1",
+        "user": "Sofi Gray"
+      },
+      {
+        "user_id": "88888001fd67db3si2",
+        "user": "Mary Gray"
+      },
+      {
+        "user_id": "88888001fd67db3si3",
+        "user": "Alex Gray"
+      }
+    ],
+    "source": ["Google Ads", "Bing Ads", "Organic"],
+    "time_zone": ["America/Los_Angeles", "America/New_York"],
+    "permissions": ["Standart", "Admin", "Dispatcher"],
+    "state": ["FL", "CA", "TX"]
+  }
+}

@@ -1,0 +1,118 @@
+@import "../../mixins"
+
+*[class$="Page_List"]
+
+  @media(max-width: 680px)
+    padding-bottom: 100px
+
+  .reports-grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    background: #d0d3da
+    padding: 1px
+    padding-top: 0
+    grid-gap: 1px
+
+    @media(max-width: 720px)
+      grid-template-columns: repeat(2, 1fr)
+
+    .cell
+      text-align: right
+      padding: 25px
+      padding-left: 5px
+      background: #fff
+      color: rgb(131, 145, 173)
+
+      @media(max-width: 1050px)
+        padding: 10px
+
+      .amount
+        font-size: 35pt
+
+        @media(max-width: 1050px)
+          font-size: 22pt
+
+      .legend
+        font-size: 18pt
+        text-transform: capitalize
+
+        @media(max-width: 1050px)
+          font-size: 12pt
+
+  .page-header
+    padding: 25px
+
+    h1
+      font-weight: 500
+
+  .filter-button
+    position: relative
+    flex-shrink: 0
+    $filter-button: &
+
+    &:last-child
+      margin-left: auto
+
+    .filter-wrapper
+      position: absolute
+      top: calc(100% + 10px)
+      left: 0
+      width: 150px
+      max-height: 200px
+      overflow: auto
+      padding: 12px 18px
+      border-radius: 20px
+      background: #fff
+      box-shadow: 0 4px 4px rgba(0, 0, 0, .25)
+      z-index: 5
+
+      hr
+        margin: 10px -15px
+        background: rgb(208, 211, 218)
+        height: 1px
+        border: none
+
+      .Checkbox
+        margin: 10px 0
+        flex-shrink: 0
+
+        span
+          color: #000
+          font-size: 11pt
+
+      & > button
+        margin: 0 auto
+        padding: 5px 12px
+        font-size: 11pt
+        border-width: 1px
+
+  .ReportFilters,
+  .ReportTableControls,
+  & > .contents
+    padding: 15px
+    border-top: 1px solid #d0d3da
+
+  .ReportFilters
+    padding: 0
+
+  .ReportTableControls
+
+    &:not(._under)
+      padding-top: 30px
+      padding-bottom: 10px
+
+    &._under
+      padding-top: 0
+      margin-top: -5px
+      border-top: none
+
+  & > .contents
+    border-top: 0
+    padding-top: 0
+
+    .mobile-table-items
+      display: flex
+      flex-direction: column
+
+      .add-button-wrapper
+        margin-left: auto

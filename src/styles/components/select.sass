@@ -1,0 +1,42 @@
+@import "../mixins"
+
+.SelectComponent
+  position: relative
+  perspective: 100vw
+  z-index: 3
+
+  & > button
+    z-index: 2
+    border: 1px solid #d0d3da
+
+    svg
+      width: 16px !important
+      transition: .21s
+      fill: #000 !important
+
+      &._flipped
+        transform: rotateX(180deg)
+
+  .options-list-wrapper
+    position: absolute
+    min-width: 230px
+    max-height: 300px
+    left: 50%
+    background: #fff
+    border-radius: 10px
+    box-shadow: 3px 6px 5px rgba(30, 30, 30, .3)
+    overflow: auto
+    transition: .21s
+    transform: translate(-50%, 0)
+    z-index: 4
+
+    button.option
+      width: 100%
+      border-left: 7px solid transparent !important
+      text-align: left
+      padding: 7px 12px
+      font-size: 11pt
+
+      &._active
+        border-left-color: rgb(96, 147, 222) !important
+        background: rgb(232, 233, 237) !important

@@ -1,0 +1,83 @@
+{
+	"interface": {
+		"filter_words": {
+			"dispatcher": ["Mike"],
+			"friendly_name": ["TexasGA"],
+			"status": ["Completed"]
+		},
+		"tag_words": ["blacklist", "spam"],
+		"max_pages": 1,
+		"rows_start": 1,
+		"rows_end": 3,
+		"rows_all": 3,
+		"min_date": "2021-02-01",
+		"max_date": "2021-08-21"
+	},
+	"permissions": {
+		"listen_call": true,
+		"show_client": true,
+		"show_appointment": true
+	},
+	"dashboard": {
+		"calls": "300",
+		"callers": "250",
+		"missed_calls": "4",
+		"active_calls": "2"
+	},
+	"calls": [
+		{
+			"call_id": "88888001fd67db3si1",
+			"direction": "inbound",
+			"created_at": "06/25/2019 2:12pm",
+			"dispatcher": "Mike",
+			"caller_name": "HEINER BRITANI",
+			"client": "John Ryder",
+			"client_id": "88888001fd67db3si1",
+			"call_from": "+19087478626",
+			"friendly_name": "TexasGA",
+			"call_to": "+14066024559",
+			"extension": "08990",
+			"is_appointment": "lead",
+			"appointment_id": "88888001fd67db3si1",
+			"status": "Completed",
+			"duration": "3min 7sec",
+			"call_url": "http://andrew53.artemiudintsev.com/examples2/test.mp3"
+		},
+		{
+			"call_id": "88888001fd67db3si1",
+			"direction": "outbound",
+			"created_at": "06/25/2019 2:12pm",
+			"dispatcher": "Mike",
+			"caller_name": "HEINER BRITANI",
+			"client": "John Ryder",
+			"client_id": "88888001fd67db3si1",
+			"call_from": "+19087478626",
+			"friendly_name": "TexasGA",
+			"call_to": "+14066024559",
+			"extension": "08990",
+			"is_appointment": "main",
+			"appointment_id": "88888001fd67db3si1",
+			"status": "Completed",
+			"duration": "3min 7sec",
+			"call_url": "http://andrew53.artemiudintsev.com/examples2/test.mp3"
+		},
+		{
+			"call_id": "88888001fd67db3si1",
+			"direction": "inbound",
+			"created_at": "06/25/2019 2:12pm",
+			"dispatcher": "Mike",
+			"caller_name": "HEINER BRITANI",
+			"client": "",
+			"client_id": "",
+			"call_from": "+19087478626",
+			"friendly_name": "TexasGA",
+			"call_to": "+14066024559",
+			"extension": "08990",
+			"is_appointment": "",
+			"appointment_id": "",
+			"status": "Canceled",
+			"duration": "3min 7sec",
+			"call_url": ""
+		}
+	]
+}

@@ -1,0 +1,194 @@
+@import "../mixins"
+
+header
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  border-bottom: 1px solid rgb(208, 211, 218)
+  z-index: 20
+
+  @media(max-width: 920px)
+    border-bottom: none
+
+  // Project headers
+  .ProjectHeaders
+    width: $aside-panel-width
+    flex-shrink: 0
+
+    @media(max-width: 1200px)
+      width: 100%
+
+    @media(max-width: 920px)
+      padding: 0 20px
+
+    // Switchers
+    & > .mobile-nav-switcher,
+    & > .mobile-account-menu-switcher
+      display: none
+
+      @media(max-width: 920px)
+        display: block
+        margin-right: auto
+
+      & > svg
+        fill: #fff
+
+    & > .mobile-account-menu-switcher
+      position: relative
+
+      @media(max-width: 920px)
+        margin-right: 0
+        margin-left: auto
+
+      button
+
+        & > svg
+          fill: #fff
+
+  // Desktop nav switcher
+  .nav-switch-button
+    display: flex
+    height: $header-row-height
+    padding: 0 15px
+
+    @media(max-width: 920px)
+      display: none
+
+    & > button
+      display: flex
+      gap: 5px
+      align-items: center
+      margin: auto
+
+      $button: &
+
+      &::before,
+      &::after
+        content: ''
+        display: block
+        width: 10px
+        height: 10px
+        clip-path: polygon(0 0, 100% 50%, 0 100%)
+        background: #6093DE
+        transition: .21s
+
+      &::before
+        width: 0
+        clip-path: polygon(0 50%, 100% 0, 100% 100%)
+
+        @at-root #{$button}._active::before
+          width: 10px
+
+      &::after
+
+        @at-root #{$button}._active::after
+          width: 0
+
+      svg
+        fill: #0F1A34
+        width: 28px
+
+  // Header search panel
+  .search-panel
+    display: flex
+    align-items: center
+    gap: 10px
+    padding: 0 20px
+    height: $header-row-height
+
+    @media(max-width: 920px)
+
+      &:not(._forcedShown)
+        display: none
+
+    & > button
+
+      svg
+        fill: #0F1A34
+        width: 28px
+
+    .search-input
+      display: flex
+      border: 1px solid #0F1A34
+      border-radius: 20px
+      overflow: hidden
+      width: 350px
+      transition: .21s
+
+      &:not(._shown)
+        width: 0
+        opacity: 0
+
+      input,
+      button
+        border-radius: 0
+        border: 0
+
+      button
+        background: #0F1A34
+
+        svg
+          fill: #fff
+
+  // Nav switchers
+  .nav-switchers
+    display: flex
+    height: $header-row-height
+    border-left: 1px solid #0F1A34
+    border-right: 1px solid #0F1A34
+    margin-left: auto
+
+    @media(max-width: 920px)
+
+      &:not(._forcedShown)
+        display: none
+
+    button
+      display: flex
+      align-items: center
+      border-top: 3px solid transparent
+      border-bottom: 3px solid transparent
+      border-radius: 0
+      padding: 0 20px
+      transition: .21s
+
+      &:not(:first-child)
+        border-left: 1px solid #0F1A34
+
+      &._active
+        background: rgba(142, 142, 147, .15)
+        border-bottom-color: #0F1A34
+
+      svg
+        width: 28px
+        fill: #0F1A34
+
+  // Nav buttons
+  .nav-buttons
+    display: flex
+    height: $header-row-height
+
+    @media(max-width: 920px)
+      display: none
+
+    & > div
+      position: relative
+      display: flex
+      $button-wrapper: &
+
+      & > button
+        display: flex
+        align-items: center
+        margin: auto
+        padding: 0 10px
+
+        svg
+          width: 28px
+          fill: #0F1A34
+          transition: .21s
+
+          @at-root #{$button-wrapper}.__account-menu-switcher > button svg
+            width: 38px
+
+          @at-root #{$button-wrapper} > button._active svg
+            fill: #6093DE

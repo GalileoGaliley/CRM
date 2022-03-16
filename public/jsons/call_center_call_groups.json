@@ -1,0 +1,63 @@
+{
+  "interface": {
+    "max_pages": 1,
+    "rows_start": 1,
+    "rows_end": 3,
+    "rows_all": 3
+  },
+  "permissions": {
+    "show_call_group": true,
+    "add_call_group": true
+  },
+  "call_groups": [
+    {
+      "call_group_id": "88888001fd67db3si1",
+      "name": "Standart",
+      "dispatchers": "Sofi Gray, Mary Gray, Mike Gray",
+      "call_flows": "Standart, Texas"
+    },
+    {
+      "call_group_id": "88888001fd67db3si2",
+      "name": "Texas",
+      "dispatchers": "Sofi Gray, Mary Gray, Mike Gray",
+      "call_flows": "Texas"
+    },
+    {
+      "call_group_id": "88888001fd67db3si3",
+      "name": "Customer Service",
+      "dispatchers": "Sofi Gray, Mike Gray",
+      "call_flows": "Standart"
+    }
+  ],
+  "edit": {
+    "dispatchers": [
+      {
+        "dispatcher_id": "88888001fd67db3si4",
+        "name": "Sofi2",
+        "user": "Sofi Gray",
+        "phone": "(454) 454-5555",
+        "is_phone": true,
+        "is_softphone": false,
+        "active": "Active"
+      },
+      {
+        "dispatcher_id": "88888001fd67db3si5",
+        "name": "Mary2",
+        "user": "Mary Gray",
+        "phone": "(454) 454-5595",
+        "is_phone": true,
+        "is_softphone": false,
+        "active": "Inactive"
+      },
+      {
+        "dispatcher_id": "88888001fd67db3si6",
+        "name": "Alex2",
+        "user": "Alex Gray",
+        "phone": "(455) 454-5595",
+        "is_phone": true,
+        "is_softphone": true,
+        "active": "Inactive"
+      }
+    ]
+  }
+}

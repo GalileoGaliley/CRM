@@ -1,0 +1,60 @@
+.NotificationsWidget
+  font-size: 11pt
+
+  .header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px
+    gap: 10px
+
+    .title
+      font-weight: 500
+
+    & > button
+      color: #6093DE
+      font-size: 10pt
+
+      &:hover
+        text-decoration: underline
+
+  .notifications-list
+    max-height: 300px
+    overflow: auto
+    border-top: 1px solid #8E8E93
+
+    @media(max-width: 920px)
+      max-height: auto
+      height: calc(100% - 38px)
+
+    .notification
+      display: flex
+      align-items: flex-start
+      gap: 10px
+      padding: 10px
+      font-size: 10pt
+
+      .icon
+        display: flex
+        width: 40px
+        height: 40px
+        flex-shrink: 0
+        background: #c4c4c4
+        border-radius: 50%
+        
+        svg
+          margin: auto
+          width: 24px
+          fill: #6093DE
+
+      .contents
+
+        .timestamp
+          display: flex
+          align-items: center
+          gap: 5px
+          margin-top: 7px
+
+          svg
+            width: 14px
+            fill: #6093DE

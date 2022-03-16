@@ -1,0 +1,84 @@
+.ReportFilters
+  position: relative
+  z-index: 6
+
+  & > .flex-container
+    gap: 15px
+    padding: 15px
+
+    .__left,
+    .__right
+      gap: 15px
+
+    .__right
+      padding-left: 100px
+      flex-wrap: wrap
+      justify-content: flex-end
+      margin-left: auto
+
+    .__search-form
+      // min-width: 150px
+      width: 100%
+      max-width: 300px
+      gap: 0
+
+      button
+        margin-left: -46px
+
+    .date-range
+      position: relative
+      z-index: 2
+
+      input
+        width: 150px
+        padding: 12px 15px
+        font-size: 11pt
+        border-radius: 5px
+        background: #E7E9EC
+        border: 1px solid #D0D3DA
+        border-left: 5px solid #6093DE
+
+      .date-range-wrapper
+        position: absolute
+        width: 100%
+        left: 50%
+        top: 100%
+        transform: translateX(-50%)
+        background: #fff
+        box-shadow: 0 4px 4px rgba(#000, .25)
+        border-radius: 20px
+        opacity: 0
+        visibility: hidden
+        transition: .21s
+
+        &._shown
+          opacity: 1
+          visibility: visible
+
+    button.update-button
+      flex-shrink: 0
+
+    &:first-child
+
+      @media(max-width: 1080px)
+        flex-direction: column
+        align-items: stretch
+
+      .__search-form
+
+        @media(max-width: 1080px)
+          max-width: unset
+
+      .filter-button
+
+        @media(max-width: 680px)
+          display: none
+
+    &:nth-child(2)
+      flex-wrap: nowrap
+      border-top: 1px solid #d0d3da
+
+      .__search-form
+
+        @media(max-width: 680px)
+          max-width: unset

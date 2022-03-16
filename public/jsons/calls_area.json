@@ -1,0 +1,35 @@
+{
+	"interface": {
+		"tag_words": ["blacklist", "spam"],
+		"max_pages": 1,
+		"rows_start": 1,
+		"rows_end": 2,
+		"rows_all": 2,
+		"min_date": "2021-02-01",
+		"max_date": "2021-08-21"
+	},
+	"dashboard": {
+		"calls": "300",
+		"callers": "250",
+		"missed_calls": "4",
+		"active_calls": "2"
+	},
+	"areas": [
+		{
+			"area": "Houston, TX",
+			"total_calls": "58",
+			"completed_calls": "58",
+			"unanswered_calls": "24",
+			"avg_duration": "2:34",
+			"total_appointments": "15"
+		},
+		{
+			"area": "Tampa, FL",
+			"total_calls": "36",
+			"completed_calls": "24",
+			"unanswered_calls": "4",
+			"avg_duration": "4:11",
+			"total_appointments": "12"
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+  "permissions": {
+    "edit_appointment": true,
+    "show_client": true
+  },
+  "appointment": {
+    "appointment_id": "88888001fd67db3si1",
+    "name": "2665NSM-A-01",
+    "type": "Service Call",
+    "status": "Closed",
+    "job": "2665NSM",
+    "property_type": "Residental",
+    "area": "TMP_FL",
+    "schedule_time_start": "2021-05-04 10:34:00",
+    "schedule_time_end": "2021-05-04 12:34:00",
+    "service_resource": "Mike",
+    "created_at": "05/04/2021 09:32am",
+    "created_by": "Alex",
+    "last_edited_at": "05/04/2021 10:34am",
+    "last_edited_by": "Alex"
+  },
+  "clients": [{
+    "client_id": "88888001fd67db3si1",
+    "name": "Mary Gray",
+    "main_phone": "+18137855558",
+    "source": "Google Ads",
+    "jobs": "3",
+    "appointments": "8",
+    "recalls": "4",
+    "total": "$850.00",
+    "paid": "$360.00",
+    "unpaid": "$490.00"
+  }],
+  "edit": {
+    "type": ["Service Call", "Follow Up", "Recall"],
+    "status": ["Open", "Wait Paiment", "Closed"],
+    "service_resources": [{
+      "service_resource_id": "88888001fd67db3si1",
+      "name": "Sofi"
+    },
+    {
+      "service_resource_id": "88888001fd67db3si1",
+      "name": "Mike"
+    },
+    {
+      "service_resource_id": "88888001fd67db3si1",
+      "name": "Alex"
+    }]
+  }
+}

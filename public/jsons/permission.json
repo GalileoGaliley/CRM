@@ -1,0 +1,37 @@
+{
+	"permissions": {
+		"edit_permission": true,
+		"show_user": true
+	},
+	"permission": {
+		"permission_id": "88888001fd67db3si1",
+		"name": "Standart",
+		"actions": ["Show Appointment", "Show Job"]
+	},
+	"users": [
+		{
+			"user_id": "88888001fd67db3si1",
+			"firstname": "Sofi",
+			"lastname": "Gray",
+			"function": "Manager",
+			"active": "Active"
+		},
+		{
+			"user_id": "88888001fd67db3si2",
+			"firstname": "Mari",
+			"lastname": "Gray",
+			"function": "Dispatcher",
+			"active": "Inactive"
+		},
+		{
+			"user_id": "88888001fd67db3si3",
+			"firstname": "Mike",
+			"lastname": "Gray",
+			"function": "Technician",
+			"active": "Waiting"
+		}
+	],
+	"edit": {
+		"actions": ["Add Appointment", "Add User", "Show User"]
+	}
+}

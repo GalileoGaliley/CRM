@@ -1,0 +1,146 @@
+@import "../../mixins"
+
+.entity-edit
+
+  .wrapper
+    margin: 20px
+
+    .item-name
+      font-size: 16pt
+      color: #8391AD
+
+  .fieldset
+    margin: 20px
+    border: 1px solid #d0d3da
+    border-radius: 20px
+    padding: 30px
+
+    .legend-action-wrapper
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      gap: 10px
+
+      .input-wrapper
+        display: flex
+        align-items: center
+        gap: 10px
+
+        label
+          font-size: 15pt
+          font-weight: 500
+
+        .SelectComponent
+          flex-shrink: 0
+
+    .legend
+      font-size: 18pt
+      font-weight: bold
+
+    .fields
+      display: flex
+      flex-wrap: wrap
+      gap: 30px
+      margin-top: 30px
+
+      .avatar-editing
+        align-self: center
+
+        button
+
+          svg
+            width: 90px
+
+      & > .__left,
+      & > .__right
+        display: flex
+        flex-direction: column
+        gap: 30px
+        flex: 1
+        min-width: 350px
+
+      .field
+        position: relative
+        display: flex
+        align-items: center
+        min-height: 30px
+
+        &._ait
+          align-items: flex-start
+
+        & > span
+          display: block
+          width: 180px
+          font-size: 15pt
+          flex-shrink: 0
+
+          @media(max-width: 920px)
+            font-size: 12pt
+            width: 140px
+
+        & > *:nth-child(2):not(.Switcher)
+          flex: 1
+
+        & > .rdt,
+        & > .SelectComponent
+          width: 100%
+
+    table.table
+      margin-top: 30px
+
+    .mobile-table
+      padding: 0
+      margin-top: 20px
+      border-top: none
+
+  .editing-buttons
+    flex-wrap: wrap
+    margin-top: 50px
+
+    @media(max-width: 640px)
+      justify-content: center !important
+
+    .buttons
+      display: flex
+      gap: 10px
+
+  .item-delete-popup
+    display: flex
+    position: fixed
+    top: $header-row-height
+    left: 0
+    width: 100%
+    height: calc(100% - $header-row-height)
+    padding: 100px 30px
+    overflow: auto
+    background: rgba(96, 147, 222, .25)
+    z-index: 7
+
+    .wrapper
+      width: 100%
+      max-width: 320px
+      margin: auto
+      background: #fff
+      padding: 20px
+      border-radius: 4px
+
+      .title
+        background: #EB5757
+        color: #fff
+        font-size: 16pt
+        padding: 7px 12px
+        margin: 0 -20px
+        text-align: center
+
+      .checkbox-wrapper
+        margin-top: 30px
+
+        .Checkbox
+
+          span
+            font-size: 10pt
+
+      .buttons
+        display: flex
+        gap: 10px
+        margin-top: 30px

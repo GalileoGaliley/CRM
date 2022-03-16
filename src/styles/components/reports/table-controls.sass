@@ -1,0 +1,97 @@
+.ReportTableControls
+
+  button.add-button
+    padding: 0 !important
+    padding-right: 10px !important
+    color: #8391AD
+    font-size: 15pt
+    font-weight: bold
+
+    & > svg
+
+      &:first-child
+        width: 40px !important
+        padding: 5px
+        fill: #fff
+        background: #01B41F
+        border-radius: 50%
+
+      &:last-child
+        width: 24px !important
+
+  .table-pages-nav
+    display: flex
+    align-items: center
+    gap: 10px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+    button
+
+      svg
+        width: 12px
+        fill: #000
+
+      &:disabled
+
+        svg
+          fill: #D0D3DA
+
+  & > .__add-button
+    display: flex
+    justify-content: flex-end
+    margin-bottom: 15px
+
+  .table-controls
+    position: relative
+    display: flex
+    align-items: center
+    gap: 10px
+    font-size: 11pt
+
+    .hint-text
+      color: rgb(131, 145, 173)
+
+      .add-button-wrapper
+        margin-left: auto
+
+      .table-pages-nav
+
+        @media(max-width: 680px)
+          display: none
+
+    .sort
+      display: flex
+      align-items: center
+      gap: 5px
+      margin-left: auto
+
+    .__add-button
+      margin-left: auto
+
+  .table-controls-bottom-panel
+    position: fixed
+    left: 0
+    bottom: 0
+    width: 100%
+    background: #fff
+    box-shadow: 0 0 10px rgba(30, 30, 30, .3)
+    z-index: 7
+
+    .results-amount
+      padding: 10px
+      text-align: center
+
+    .pages-nav
+      display: flex
+      padding: 10px
+
+      button
+        flex: 1
+
+        svg
+          margin: auto
+          width: 18px
+          fill: #D0D3DA

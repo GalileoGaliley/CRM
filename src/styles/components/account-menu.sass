@@ -1,0 +1,76 @@
+.AccountMenu
+  
+  .account-name
+    padding: 10px
+    font-weight: 500
+    font-size: 14pt
+    text-align: center
+
+  .menu-buttons
+    padding: 5px 0
+    border-top: 1px solid #8E8E93
+
+    button
+      position: relative
+      border-radius: 0
+
+      $button: &
+
+      .icon
+        display: flex
+        width: 35px
+        height: 35px
+        border-radius: 50%
+        border: 2px solid #0F1A34
+        background: #0F1A34
+
+        $icon: &
+
+        &._light
+          background: #fff
+
+        svg
+          margin: auto
+          width: 18px
+          fill: #fff
+
+          @at-root #{$icon}._light svg
+            fill: #000
+
+      span
+        display: block
+        color: #000
+
+      .submenu
+        position: absolute
+        top: 0
+        left: 0
+        width: 250px
+        background: #fff
+        transform: translate(calc(-100% + 5px), 0)
+        box-shadow: 0.4rem 0.4rem 0.6rem rgba(#000, .14)
+        opacity: 0
+        visibility: hidden
+        transition: .21s
+        z-index: 3
+
+        @media(max-width: 920px)
+          width: 180px
+
+        @at-root #{$button}:hover .submenu
+          opacity: 1
+          visibility: visible
+          transform: translate(-100%, 0)
+
+        button
+
+          img
+            width: 35px
+            height: 35px
+            background: #8E8E93
+            border-radius: 50%
+
+          span
+            overflow: hidden
+            white-space: nowrap
+            text-overflow: ellipsis

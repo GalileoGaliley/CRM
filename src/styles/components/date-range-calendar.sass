@@ -1,0 +1,68 @@
+.DateRangeCalendar
+  font-weight: 500
+
+  .header
+    display: flex
+    padding: 15px 10px
+
+    & > button
+
+      svg
+        width: 18px
+
+    .current-month
+      width: 100%
+      text-align: center
+
+  .calendar
+
+    .days-grid
+      display: grid
+      grid-template-columns: repeat(7, 1fr)
+
+      .day
+        position: relative
+        display: flex
+        justify-content: center
+        width: 48px
+        height: 48px
+        align-items: center
+        cursor: pointer
+
+        &::before,
+        &::after
+          content: ''
+          display: block
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+
+        &._inRange:not(._selected)
+          background: #f1f1f1
+
+        &._selected
+          color: #fff
+
+          &::before
+            background: rgb(96, 147, 222)
+            border-radius: 50%
+            z-index: -1
+
+        &._rangeStart::after,
+        &._rangeEnd::after
+          background: #f1f1f1
+          width: 50%
+          right: 0
+          left: auto
+          z-index: -2
+
+        &._rangeEnd::after
+          right: auto
+          left: 0
+
+    .week-days
+      // margin: 10px 0
+      border-top: 1px solid rgb(208, 211, 218)
+      border-bottom: 1px solid rgb(208, 211, 218)

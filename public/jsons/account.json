@@ -1,0 +1,60 @@
+{
+  "permissions": {
+    "edit_account": true
+  },
+  "account": {
+    "account_id": "88888001fd67db3si1",
+    "name": "Texas",
+    "email": "texas@appliancerepair.com",
+    "owner": "Alex",
+    "users": "17",
+    "phone_numbers": "12",
+    "source": "Google Ads",
+    "status": "Active",
+    "phone": "+1 (999) 999 99999",
+    "avatar_url": "",
+    "created_at": "05/04/2021 09:32am",
+    "created_by": "Alex",
+    "last_edited_at": "05/04/2021 10:34am",
+    "last_edited_by": "Alex",
+    "time_zone": "America/Los_Angeles",
+    "permission": "Standart",
+    "twilio_account_sid": "FR554gFBEFEEGEREFEREVEVETV",
+    "twilio_call_token": "Yvjf8jjhkeferf5g5g5g5gg",
+    "twilio_token": "vrhjkthelfkeklrf98545h",
+    "mailing_street": "8878 Pine Rd",
+    "mailing_unit": "101",
+    "mailing_city": "Los Angeles",
+    "mailing_state": "CA",
+    "mailing_zip": "96787",
+    "billing_street": "8878 Pine Rd",
+    "billing_unit": "101",
+    "billing_city": "Los Angeles",
+    "billing_state": "CA",
+    "billing_zip": "96787",
+    "slack_url": "https://slack.com",
+    "slack_active": true,
+    "same_address": true
+  },
+  "edit": {
+    "status": ["Active", "Inactive", "Pending"],
+    "owners": [
+      {
+        "user_id": "88888001fd67db3si1",
+        "user": "Sofi Gray"
+      },
+      {
+        "user_id": "88888001fd67db3si2",
+        "user": "Mary Gray"
+      },
+      {
+        "user_id": "88888001fd67db3si3",
+        "user": "Alex Gray"
+      }
+    ],
+    "source": ["Google Ads", "Bing Ads", "Organic"],
+    "time_zone": ["America/Los_Angeles", "America/New_York"],
+    "permissions": ["Standart", "Admin", "Dispatcher"],
+    "state": ["FL", "CA", "TX"]
+  }
+}

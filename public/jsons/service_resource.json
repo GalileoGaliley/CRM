@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "edit_service_resource": true
+  },
+  "service_resource": {
+    "service_resource_id": "88888001fd67db3si1",
+    "name": "Sofi",
+    "user": "Sofi Gray",
+    "area": "HOU_TX",
+    "time_zone": "America/Los_Angeles",
+    "active": true,
+    "phone": "+1 (787) 890-4433",
+    "is_phone": true,
+    "slack_channel": "sofi_orders",
+    "is_slack": true,
+    "slack_member_id": "sofi_orders",
+    "created_at": "05/04/2021 09:32am",
+    "created_by": "Alex",
+    "last_edited_at": "05/04/2021 10:34am",
+    "last_edited_by": "Alex"
+  },
+  "edit": {
+    "time_zone": ["America/Los_Angeles", "America/New_York"],
+    "area": ["HOU_TX", "TMP_FL", "JAX_FL"]
+  }
+}

@@ -1,0 +1,60 @@
+{
+	"interface": {
+		"filter_words": {
+			"service_resource": ["Mike"],
+			"area": ["TMP_FL"],
+			"created_by": ["Alex"]
+		},
+		"max_pages": 1,
+		"rows_start": 1,
+		"rows_end": 2,
+		"rows_all": 2,
+		"min_date": "2021-02-01",
+		"max_date": "2021-08-21"
+	},
+	"permissions": {
+		"show_absence": true
+	},
+	"absences": [
+		{
+			"absence_id": "88888001fd67db3si1",
+			"created_at": "03/29/2021 3:39 am",
+			"service_resource": "Mike",
+			"area": "TMP_FL",
+			"absence_start": "05/07/2021 10:00am",
+			"absence_end": "05/16/2021 6:00pm",
+			"created_by": "Alex"
+		},
+		{
+			"absence_id": "88888001fd67db3si2",
+			"created_at": "03/29/2021 4:46 am",
+			"service_resource": "Mike",
+			"area": "TMP_FL",
+			"absence_start": "05/08/2021 9:00am",
+			"absence_end": "05/08/2021 5:00pm",
+			"created_by": "Alex"
+		}
+	],
+	"edit": [
+		{
+			"service_resource": "Mike",
+			"area": "TMP_FL"
+		},
+		{
+			"service_resource": "Alex",
+			"area": "MIA_FL"
+		},
+		{
+			"service_resource": "Joan",
+			"area": "HOU_TX"
+		},
+		{
+			"service_resource": "Peter",
+			"area": "TMP_FL"
+		},
+		{
+			"service_resource": "Steve",
+			"area": "JAX_FL"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"interface": {
+		"filter_words": {
+			"source": ["Google Ads"],
+			"area": ["Houston, TX"]
+		},
+		"tag_words": ["blacklist", "spam"],
+		"max_pages": 1,
+		"rows_start": 1,
+		"rows_end": 2,
+		"rows_all": 2,
+		"min_date": "2021-02-01",
+		"max_date": "2021-08-21"
+	},
+	"dashboard": {
+		"calls": "300",
+		"callers": "250",
+		"missed_calls": "4",
+		"active_calls": "2"
+	},
+	"numbers": [
+		{
+			"number": "+19087478626",
+			"friendly_name": "TexasGA",
+			"source": "Google Ads",
+			"area": "Houston, TX",
+			"total_calls": "58",
+			"completed_calls": "34",
+			"unanswered_calls": "24",
+			"avg_duration": "2:34",
+			"total_appointments": "15"
+		},
+		{
+			"number": "+19087478629",
+			"friendly_name": "TexasGA",
+			"source": "Google Ads",
+			"area": "Houston, TX",
+			"total_calls": "51",
+			"completed_calls": "14",
+			"unanswered_calls": "4",
+			"avg_duration": "3:54",
+			"total_appointments": "5"
+		}
+	]
+}

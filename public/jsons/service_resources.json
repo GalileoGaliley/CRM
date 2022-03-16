@@ -1,0 +1,61 @@
+{
+  "interface": {
+    "filter_words": {
+      "area": ["HOU_TX", "TMP_FL", "JAX_FL"],
+      "time_zone": ["America/Los_Angeles", "America/New_York"],
+      "active": ["Active", "Inactive", "Pending"]
+    },
+    "max_pages": 1,
+    "rows_start": 1,
+    "rows_end": 3,
+    "rows_all": 3
+  },
+  "permissions": {
+    "show_service_resource": true,
+    "add_service_resource": true
+  },
+  "service_resources": [
+    {
+      "service_resource_id": "88888001fd67db3si1",
+      "name": "Sofi",
+      "user": "Sofi Gray",
+      "area": "HOU_TX",
+      "time_zone": "America/Los_Angeles",
+      "active": "Active"
+    },
+    {
+      "service_resource_id": "88888001fd67db3si1",
+      "name": "Mike",
+      "user": "Mike Gray",
+      "area": "TMP_FL",
+      "time_zone": "America/Los_Angeles",
+      "active": "Inactive"
+    },
+    {
+      "service_resource_id": "88888001fd67db3si1",
+      "name": "Alex",
+      "user": "Alex Gray",
+      "area": "JAX_FL",
+      "time_zone": "America/Los_Angeles",
+      "active": "Pending"
+    }
+  ],
+  "edit": {
+    "users": [
+      {
+        "user_id": "88888001fd67db3si1",
+        "user": "Sofi Gray"
+      },
+      {
+        "user_id": "88888001fd67db3si2",
+        "user": "Mary Gray"
+      },
+      {
+        "user_id": "88888001fd67db3si3",
+        "user": "Alex Gray"
+      }
+    ],
+    "time_zone": ["America/Los_Angeles", "America/New_York"],
+    "area": ["HOU_TX", "TMP_FL", "JAX_FL"]
+  }
+}

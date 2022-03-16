@@ -1,0 +1,315 @@
+@import "mixins"
+@import "transitions"
+
+// Top project about panel
+.ProjectHeaders
+  display: flex
+  justify-content: center
+  align-items: center
+  height: $header-row-height
+  gap: 10px
+  background: #0F1A34
+  cursor: pointer
+
+  img
+    width: 35px
+
+  .headers
+
+    h1, h2
+      color: #fff
+
+    h1
+      font-size: 18pt
+      font-weight: 500
+      letter-spacing: .3px
+
+    h2
+      margin-top: 0
+      font-size: 10pt
+      font-weight: 300
+
+// Commonly used flex container
+.flex-container
+  display: flex
+  align-items: center
+  gap: 30px
+
+  &.wrap
+    flex-wrap: wrap
+
+  &._gap-narrow
+    gap: 7px
+
+  &.sb
+    justify-content: space-between
+
+.menu-container
+  position: absolute
+  top: 100%
+  right: 50%
+  background: #fff
+  transform: translate(50%, 0)
+  z-index: 1
+  border: 1px solid #8E8E93
+  box-shadow: 0.4rem 0.4rem 0.6rem rgba(#000, .28)
+
+  $menu-container: &
+
+  &._approach-left
+    right: 0
+    transform: none
+
+  &::before,
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    right: 50%
+    transform: translate(50%, -100%)
+    width: 20px
+    height: 10px
+    background: #8E8E93
+    clip-path: polygon(50% 0, 100% 100%, 0 100%)
+
+  &::after
+    transform: translate(50%, calc(-100% + 1px))
+    background: #fff
+
+  &._approach-left::before
+    right: 0
+    transform: translate(-15px, -100%)
+
+  &._approach-left::after
+    right: 0
+    transform: translate(-15px, calc(-100% + 1px))
+
+.mobile-table-items
+  display: flex
+  flex-direction: column
+  gap: 5px
+
+  .item
+    display: flex
+    flex-direction: column
+    gap: 2px
+    padding: 10px 5px
+    width: 100%
+    background: #fff
+    font-size: 11pt
+
+    &.nogap
+      gap: 0
+
+    &.negativeGap .__bottom
+      margin-top: -10px
+
+    .flex-container
+      gap: 5px
+
+    .text
+      margin-top: 3px
+      color: rgb(131, 145, 173)
+
+    .red
+      color: #EB5757
+
+    .green
+      color: #219653
+
+    .blue
+      color: #6093DE
+
+    .small
+      font-size: 9.5pt
+
+    .fw500
+      font-weight: 500
+
+    strong
+      font-size: 12pt
+
+    button
+      font-size: 11pt
+      $button: &
+
+      &._iconed
+
+        svg
+          width: 16px
+
+          @at-root #{$button}._iconed:disabled svg
+            fill: #ccc
+
+    .gray
+      font-size: 12pt
+      font-weight: 500
+      color: rgb(131, 145, 173)
+
+    .__top,
+    .__bottom
+      display: flex
+      justify-content: space-between
+
+    .__top
+      align-items: flex-start
+
+    .__bottom
+      align-items: flex-end
+
+    .__right
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      text-align: right
+      font-size: 10.5pt
+
+.popup
+  display: flex
+  position: fixed
+  top: $header-row-height
+  left: 0
+  width: 100%
+  height: calc(100% - $header-row-height)
+  padding: 100px 30px
+  overflow: auto
+  background: rgba(96, 147, 222, .25)
+  z-index: 20
+
+  .wrapper
+    width: 100%
+    max-width: 600px
+    margin: auto
+    background: #fff
+    padding: 30px
+    border-radius: 4px
+
+  &.appointmentSharePopup
+
+    .wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-wrap: wrap
+      gap: 10px
+
+      .item-name
+        font-size: 16pt
+        border: 2px solid rgb(96, 147, 222)
+        border-radius: 5px
+        padding: 10px 15px
+
+  &.callListenPopup
+
+    .wrapper
+      padding: 30px 0
+
+      .AudioPlayer
+        border-radius: 0
+
+  &.imageCrop
+
+    div:first-child
+      button
+        margin: 0 auto
+
+.__hide-on-wide
+
+  &:not(.__respectAsidePanel)
+
+    @media(min-width: 1300px)
+      display: none !important
+
+  &.__respectAsidePanel
+
+    @media(min-width: calc(1300px + $aside-panel-width))
+      display: none !important
+
+.__show-on-wide
+
+  &:not(.__respectAsidePanel)
+
+    @media(max-width: 1300px)
+      display: none !important
+
+  &.__respectAsidePanel
+
+    @media(max-width: calc(1300px + $aside-panel-width))
+      display: none !important
+
+.__hide-on-mobile
+
+  &:not(.__respectAsidePanel)
+
+    @media(max-width: 680px)
+      display: none !important
+
+  &.__respectAsidePanel
+
+    @media(max-width: calc(680px + $aside-panel-width))
+      display: none !important
+
+.__show-on-mobile
+
+  &:not(.__respectAsidePanel)
+
+    @media(min-width: 680px)
+      display: none !important
+
+  &.__respectAsidePanel
+
+    @media(min-width: calc(680px + $aside-panel-width))
+      display: none !important
+
+.red-text
+  color: #EB5757
+
+.green-text
+  color: #01B41F
+
+.blue-text
+  color: rgb(96, 147, 222)
+
+.top-nav
+  display: flex
+  flex-wrap: wrap
+  border-bottom: 1px solid #D0D3DA
+  background: #D0D3DA
+  gap: 1px
+
+  a
+    display: flex
+    justify-content: center
+    align-items: center
+    flex: 1
+    min-width: 150px
+    padding: 20px
+    border-bottom: 5px solid transparent
+    text-decoration: none
+    gap: 15px
+    color: #000
+    background: #fff
+
+    @media(max-width: 680px)
+      flex-direction: column
+      gap: 2px
+      padding: 5px
+
+    &.active
+      background: #EEEEEF
+      border-bottom-color: #6093DE
+
+    svg
+      width: 24px
+      fill: #6093DE
+      flex-shrink: 0
+
+      @media(max-width: 860px)
+        width: 16px
+
+    span
+      font-size: 18pt
+
+      @media(max-width: 860px)
+        font-size: 12pt

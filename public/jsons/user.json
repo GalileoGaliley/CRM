@@ -1,0 +1,27 @@
+{
+	"permissions": {
+		"edit_user": true
+	},
+	"user": {
+		"user_id": "88888001fd67db3si1",
+		"firstname": "Sofi",
+		"lastname": "Gray",
+		"active_status": "Active",
+		"email": "sofi@gmail.com",
+		"avatar_url": "",
+		"function": "Manager",
+		"phone": "(345)343-67-87",
+		"time_zone": "America/Los_Angeles",
+		"permission": "Standart",
+		"street": "8878 Pine Rd",
+		"unit": "101",
+		"city": "Los Angeles",
+		"State": "CA",
+		"zip": "96787"
+	},
+	"edit": {
+		"time_zone": ["America/Los_Angeles", "America/New_York"],
+		"permissions": ["Standart", "Admin", "Dispatcher"],
+		"state": ["FL", "CA", "TX"]
+	}
+}

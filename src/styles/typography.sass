@@ -1,0 +1,94 @@
+// Headers
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+  &:not(:first-child)
+    margin-top: 30px
+
+// Tables
+table.table
+  width: 100%
+  border-top: 1px solid rgb(208, 211, 218)
+  border-left: 1px solid rgb(208, 211, 218)
+  border-spacing: 0
+
+  tr
+
+    &:nth-child(odd)
+      background: #fff
+
+    &:not(:first-child)
+      cursor: pointer
+
+      &:hover
+        background: #d8ebf6
+
+    th, td
+      text-align: left
+      border-right: 1px solid rgb(208, 211, 218)
+      border-bottom: 1px solid rgb(208, 211, 218)
+      padding: 5px 10px
+      line-height: .97
+
+      @media(max-width: 1100px)
+        font-size: 10pt
+
+      .flex-container
+        gap: 5px
+
+      button
+
+        &._iconed
+
+          svg
+            fill: #8391ad
+            width: 14px
+
+      svg.__icon
+        width: 20px
+
+      span.red
+        color: #EB5757
+
+      span.green
+        color: #219653
+
+      span.blue
+        color: #6093DE
+
+    th
+      color: rgb(131, 145, 173)
+      font-weight: normal
+      background: #fff
+
+      svg.__icon
+        fill: #8391AD
+
+    td
+
+      button
+        $button: &
+
+        &._iconed
+          width: 18px
+
+          svg
+            width: 100%
+
+            @at-root #{$button}._iconed:disabled svg
+              fill: #ddd !important
+
+      & > button
+        margin: 0 auto
+
+  &.__hide-on-wide
+
+    &:not(.__respectAsidePanel)
+
+      @media(max-width: 1000px - $aside-panel-width)
+        font-size: 10pt
+
+    &.__respectAsidePanel
+
+      @media(max-width: 1000px)
+        font-size: 10pt

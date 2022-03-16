@@ -1,0 +1,62 @@
+{
+  "interface": {
+    "filter_words": {
+      "type": ["Source", "System"],
+      "source": ["Google Ads", "System"],
+      "area": ["TMP_FL", "HOU_TX", "USA"],
+      "company": ["Texas Appliance Repair", "123 Appliance Repair", "Appliance Repair"],
+      "call_flow": ["Customer Service", "Texas", "Standart"],
+      "active": ["On", "Off"]
+    },
+    "max_pages": 1,
+    "rows_start": 1,
+    "rows_end": 3,
+    "rows_all": 3
+  },
+  "permissions": {
+    "show_phone_number": true,
+    "add_phone_number": true
+  },
+  "phone_numbers": [
+    {
+      "phone_number_id": "88888001fd67db3si1",
+      "phone": "+1(454) 454-5555",
+      "friendly_name": "Volt_HOU_LS",
+      "type": "Source",
+      "source": "Google Ads",
+      "area": "HOU_TX",
+      "company": "Texas Appliance Repair",
+      "call_flow": "Texas",
+      "active": "On"
+    },
+    {
+      "phone_number_id": "88888001fd67db3si2",
+      "phone": "+1(454) 454-2255",
+      "friendly_name": "Volt_TMP_LS",
+      "type": "Source",
+      "source": "Google Ads",
+      "area": "TMP_FL",
+      "company": "123 Appliance Repair",
+      "call_flow": "Standart",
+      "active": "On"
+    },
+    {
+      "phone_number_id": "88888001fd67db3si3",
+      "phone": "+1(888) 454-5995",
+      "friendly_name": "Invoice",
+      "type": "System",
+      "source": "System",
+      "area": "USA",
+      "company": "Appliance Repair",
+      "call_flow": "Customer Service",
+      "active": "Off"
+    }
+  ],
+  "edit": {
+    "types": ["System", "Source"],
+    "sources": ["Google Ads", "Bing Ads"],
+    "companies": ["Appliance Repair", "Texas Appliance Repair"],
+    "areas": ["JAX_FL", "TMP_FL", "HOU_TX"],
+    "call_flows": ["Standart", "Texas"]
+  }
+}

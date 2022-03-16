@@ -1,0 +1,51 @@
+{
+  "interface": {
+    "max_pages": 1,
+    "rows_start": 1,
+    "rows_end": 3,
+    "rows_all": 3
+  },
+  "permissions": {
+    "show_call_flow": true,
+    "add_call_flow": true
+  },
+  "call_flows": [
+    {
+      "call_flow_id": "88888001fd67db3si1",
+      "name": "Standart",
+      "call_groups": "Standart, Texas"
+    },
+    {
+      "call_flow_id": "88888001fd67db3si2",
+      "name": "Texas",
+      "call_groups": "Texas"
+    },
+    {
+      "call_flow_id": "88888001fd67db3si3",
+      "name": "Customer Service",
+      "call_groups": "Standart, Texas"
+    }
+  ],
+  "edit": {
+    "call_groups": [
+      {
+        "call_group_id": "88888001fd67db3si1",
+        "name": "Standart1",
+        "dispatchers": "Sofi,Alex,Mike",
+        "call_flows": "Texas"
+      },
+      {
+        "call_group_id": "88888001fd67db3si2",
+        "name": "Standart2",
+        "dispatchers": "Sofi,Alex,Mike",
+        "call_flows": "Texas"
+      },
+      {
+        "call_group_id": "88888001fd67db3si3",
+        "name": "Standart3",
+        "dispatchers": "Sofi,Alex,Mike",
+        "call_flows": "Texas"
+      }
+    ]
+  }
+}

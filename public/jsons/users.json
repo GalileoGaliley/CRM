@@ -1,0 +1,58 @@
+{
+	"interface": {
+		"filter_words": {
+			"function": ["Dispatcher", "Manager", "Technician"],
+			"time_zone": ["America/Los_Angeles"],
+			"permissions": ["Standart"],
+			"active": ["Active", "Inactive", "Waiting"]
+		},
+		"max_pages": 1,
+		"rows_start": 1,
+		"rows_end": 3,
+		"rows_all": 3
+	},
+	"permissions": {
+		"show_user": true,
+		"add_user": true
+	},
+	"users": [
+		{
+			"user_id": "88888001fd67db3si1",
+			"first_name": "Sofi",
+			"last_name": "Gray",
+			"function": "Manager",
+			"phone": "(454)454-5555",
+			"email": "sofia@gmail.com",
+			"time_zone": "America/Los_Angeles",
+			"permissions": "Standart",
+			"active": "Active"
+		},
+		{
+			"user_id": "88888001fd67db3si2",
+			"first_name": "Mary",
+			"last_name": "Gray",
+			"function": "Dispatcher",
+			"phone": "(454)454-3355",
+			"email": "maria@gmail.com",
+			"time_zone": "America/Los_Angeles",
+			"permissions": "Standart",
+			"active": "Inactive"
+		},
+		{
+			"user_id": "88888001fd67db3si3",
+			"first_name": "Mike",
+			"last_name": "Gray",
+			"function": "Technician",
+			"phone": "(454)994-5555",
+			"email": "tech199@gmail.com",
+			"time_zone": "America/Los_Angeles",
+			"permissions": "Standart",
+			"active": "Waiting"
+		}
+	],
+	"edit": {
+		"time_zone": ["America/Los_Angeles", "America/New_York"],
+		"permissions": ["Standart", "Admin", "Dispatcher"],
+		"state": ["FL", "CA", "TX"]
+	}
+}

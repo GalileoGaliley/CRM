@@ -1,0 +1,106 @@
+@import "../mixins"
+
+.AuthPage
+  height: calc(100%)
+  overflow: hidden
+
+  .auth-wrapper
+    display: flex
+    height: 100%
+    padding: 100px 30px
+    overflow: auto
+    background-image: linear-gradient(rgba(#fff, .5), rgba(#fff, .5)), url('../../images/login-page-background.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+
+    form
+      margin: auto
+      text-align: center
+      width: 100%
+      max-width: 400px
+      padding: 30px 50px
+      background: #F6F7FB
+      border-radius: 20px
+      box-shadow: 0.6rem 0.4rem 0.6rem rgba(#000, .28)
+
+      .errorText
+        margin-top: 10px
+        font-size: 10pt
+        color: #EB5757
+        white-space: pre
+
+      h2
+        margin-bottom: 30px
+        font-weight: 500
+        color: #6093DE
+
+      .__form-field
+        display: flex
+        align-items: center
+        gap: 10px
+        margin-top: 10px
+
+        .label
+          flex: .5
+          text-align: right
+          flex-shrink: 0
+
+        input
+          flex: 1
+          border-color: rgba(#000, .4)
+          border-radius: 100px
+
+      button.password-reset-link
+        display: block
+        margin: 10px auto 0
+        font-size: 10pt
+        color: #0F1A34
+        text-align: center
+        text-decoration: underline
+
+      button.__submit
+        margin: 30px auto 0
+        padding: 10px 35px
+        border-radius: 100px
+        background: #0F1A34
+        color: #fff
+        font-size: 14pt
+
+      .account-select
+        margin: 30px -50px
+
+        .account
+          position: relative
+          display: flex
+          align-items: center
+          gap: 20px
+          padding: 10px 30px
+          background: #F6F7FB
+          border-bottom: 1px solid rgba(#000, .1)
+          cursor: pointer
+
+          &:first-child
+            border-top: 1px solid rgba(#000, .1)
+
+          &:hover
+            background: rgba(#000, .1)
+
+          img
+            width: 70px
+            height: 70px
+            background: #8E8E93
+            border-radius: 50%
+
+          span
+            display: block
+            font-size: 14pt
+
+          .stats-signs
+            display: flex
+            gap: 10px
+            position: absolute
+            top: 10px
+            right: 30px
+
+            svg
+              width: 18px

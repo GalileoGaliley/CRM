@@ -1,0 +1,91 @@
+{
+  "permissions": {
+    "edit_call_flow": true,
+    "show_phone_number": true,
+    "show_call_group": true
+  },
+  "call_flow": {
+    "call_flow_id": "88888001fd67db3si1",
+    "name": "Standart",
+    "phrase_start": "",
+    "phrase_office_closed": "Thanks for calling. Our office are currently closed. Our business hours are from Monday to Friday 9 AM to 6 PM Eastern Time. Please call us back during business hours. Have a nice day!",
+    "phrase_office_temporary_closed": "We are currently closed and will re-open at 11 am Eastern Time today. Please, call back later. Thank you and have a nice day!",
+    "phrase_phone_not_available": "Phone number is not available right now.",
+    "phrase_dispatcher_not_available": "Dispatchers is not available right now.",
+    "created_at": "05/04/2021 09:32am",
+    "created_by": "Alex",
+    "last_edited_at": "05/04/2021 10:34am",
+    "last_edited_by": "Alex"
+  },
+  "call_groups": [
+    {
+      "call_group_id": "88888001fd67db3si1",
+      "name": "Standart1",
+      "dispatchers": "Sofi,Alex,Mike",
+      "call_flows": "Texas"
+    },
+    {
+      "call_group_id": "88888001fd67db3si2",
+      "name": "Standart2",
+      "dispatchers": "Sofi,Alex,Mike",
+      "call_flows": "Texas"
+    }
+  ],
+  "phone_numbers": [
+    {
+      "phone_number_id": "88888001fd67db3si1",
+      "phone": "+1(454) 454-5555",
+      "friendly_name": "Volt_HOU_LS",
+      "type": "Source",
+      "source": "Google Ads",
+      "area": "HOU_TX",
+      "company": "Texas Appliance Repair",
+      "call_flow": "Texas",
+      "active": "On"
+    },
+    {
+      "phone_number_id": "88888001fd67db3si2",
+      "phone": "+1(454) 454-2255",
+      "friendly_name": "Volt_TMP_LS",
+      "type": "Source",
+      "source": "Google Ads",
+      "area": "TMP_FL",
+      "company": "123 Appliance Repair",
+      "call_flow": "Standart",
+      "active": "On"
+    },
+    {
+      "phone_number_id": "88888001fd67db3si3",
+      "phone": "+1(888) 454-5995",
+      "friendly_name": "Invoice",
+      "type": "System",
+      "source": "System",
+      "area": "USA",
+      "company": "Appliance Repair",
+      "call_flow": "Customer Service",
+      "active": "Off"
+    }
+  ],
+  "edit": {
+    "call_groups": [
+      {
+        "call_group_id": "88888001fd67db3si1",
+        "name": "Standart1",
+        "dispatchers": "Sofi,Alex,Mike",
+        "call_flows": "Texas"
+      },
+      {
+        "call_group_id": "88888001fd67db3si2",
+        "name": "Standart2",
+        "dispatchers": "Sofi,Alex,Mike",
+        "call_flows": "Texas"
+      },
+      {
+        "call_group_id": "88888001fd67db3si3",
+        "name": "Standart3",
+        "dispatchers": "Sofi,Alex,Mike",
+        "call_flows": "Texas"
+      }
+    ]
+  }
+}

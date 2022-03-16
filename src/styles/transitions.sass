@@ -1,0 +1,21 @@
+.transition-fade-entered,
+.transition-fade-entering,
+.transition-fade-exited,
+.transition-fade-exiting
+  transition: .21s
+
+.transition-fade-entered,
+.transition-fade-entering
+  opacity: 1
+  animation: fadeIn .21s 1 ease alternate
+
+  @keyframes fadeIn
+    0%
+      opacity: 0
+
+    100%
+      opacity: 1
+
+.transition-fade-exited,
+.transition-fade-exiting
+  opacity: 0

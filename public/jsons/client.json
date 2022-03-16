@@ -1,0 +1,134 @@
+{
+  "permissions": {
+    "edit_client": true,
+    "show_job": true,
+    "show_appointment": true,
+    "show_estimate": true,
+    "show_invoice": true,
+    "show_payment": true
+  },
+  "client": {
+    "client_id": "88888001fd67db3si1",
+    "firstname": "Alex",
+    "lastname": "Black",
+    "company_name": "Apple",
+    "source": "Google Ads",
+    "total": "$345",
+    "paid": "$100",
+    "unpaid": "$245",
+    "created_at": "05/04/2021 09:32am",
+    "created_by": "Alex",
+    "last_edited_at": "05/04/2021 10:34am",
+    "last_edited_by": "Alex"
+  },
+  "phones": [{
+    "name": "Main",
+    "phone": "+18137855558"
+  },
+  {
+    "name": "Tenant",
+    "phone": "+18137855559"
+  }
+],
+"addresses": [{
+  "address": "1798 Country rd, Largo FL 34688",
+  "property_type": "Residental",
+  "note": "Gate code: 1349"
+  }],
+  "comments": [{
+    "created_at": "05/04/2021 09:32am",
+    "comment": "Black list, didn't pay",
+    "created_by": "Alex"
+    }],
+    "jobs": [{
+      "job_id": "88888001fd67db3si1",
+      "created_at": "03/29/2021 3:39am",
+      "name": "2665NSM",
+      "status": "Done",
+      "property_type": "Residental",
+      "area": "Houston, TX",
+      "source": "Google Ads",
+      "created_by": "Linda",
+      "appointments": "4",
+      "service_resources": "Mike, Sam",
+      "total": "$859.98",
+      "paid": "$859.98"
+    },
+    {
+      "job_id": "88888001fd67db3si1",
+      "created_at": "03/29/2021 3:39am",
+      "name": "2669NSM",
+      "status": "Done",
+      "property_type": "Residental",
+      "area": "Houston, TX",
+      "source": "Google Ads",
+      "created_by": "Linda",
+      "appointments": "4",
+      "service_resources": "Mike, Sam",
+      "total": "$559.98",
+      "paid": "$559.98"
+    }
+  ],
+  "appointments": [{
+    "appointment_id": "88888001fd67db3si1",
+    "created_at": "03/29/2021 3:39am",
+    "name": "2665NSM-A-01",
+    "type": "Service call",
+    "status": "Closed",
+    "property_type": "Residental",
+    "area": "TMP_FL",
+    "created_by": "Alex",
+    "schedule_time": "03/30/2021(8:00am-10:00am)",
+    "service_resource": "Mike",
+    "is_sent": true
+  },
+  {
+    "appointment_id": "88888001fd67db3si2",
+    "created_at": "03/29/2021 3:41am",
+    "name": "5643LSA-A-01",
+    "type": "Service call",
+    "status": "Open",
+    "property_type": "Residental",
+    "area": "TMP_FL",
+    "created_by": "Artem Iudintsev",
+    "schedule_time": "03/30/2021(10:00am-12:00am)",
+    "service_resource": "Mike",
+    "is_sent": false
+  }
+],
+"estimates": [{
+  "estimate_id": "88888001fd67db3si2",
+  "created_at": "03/29/2021 3:41am",
+  "name": "5643LSA-E-01",
+  "status": "Done",
+  "service_resource": "Mike",
+  "area": "TMP_FL",
+  "total": "$850.00",
+  "comment": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, dicta dolore nesciunt delectus et at ab perspiciatis reprehenderit sed temporibus vitae cum neque tempore impedit sequi facere suscipit molestias nihil."
+  }],
+  "invoices": [{
+    "invoice_id": "88888001fd67db3si2",
+    "created_at": "03/29/2021 3:41am",
+    "name": "5643LSA-I-01",
+    "status": "Done",
+    "service_resource": "Mike",
+    "area": "TMP_FL",
+    "total": "$850.00",
+    "paid": "$360.00",
+    "unpaid": "$490.00"
+    }],
+    "payments": [{
+      "payment_id": "88888001fd67db3si2",
+      "created_at": "03/29/2021 3:41am",
+      "type": "Card",
+      "number": "*1223",
+      "service": "Stripe",
+      "status": "Done",
+      "net": "$344.60",
+      "total": "$360.00",
+      "fee": "$15.40"
+      }],
+      "edit": {
+        "source": ["Google Ads", "Bing Ads", "Yelp"]
+      }
+    }

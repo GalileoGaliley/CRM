@@ -1,0 +1,32 @@
+{
+	"interface": {
+		"max_pages": 1,
+		"rows_start": 1,
+		"rows_end": 3,
+		"rows_all": 3
+	},
+	"permissions": {
+		"show_permission": true,
+		"add_permission": true
+	},
+	"permissions_rows": [
+		{
+			"permission_id": "88888001fd67db3si1",
+			"name": "Standart",
+			"users": "Sofi Gray, Mary Gray, Mike Gray"
+		},
+		{
+			"permission_id": "88888001fd67db3si1",
+			"name": "Admin",
+			"users": ""
+		},
+		{
+			"permission_id": "88888001fd67db3si1",
+			"name": "Dispatcher",
+			"users": ""
+		}
+	],
+	"edit": {
+		"actions": ["Show Appointment", "Show Job", "Add Appointment", "Add User", "Show User"]
+	}
+}

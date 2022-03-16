@@ -1,0 +1,25 @@
+.Radio
+  display: flex
+  align-items: center
+  cursor: pointer
+  gap: 10px
+  $Checkbox: &
+
+  svg
+    width: 18px
+    fill: rgb(208, 211, 218)
+    transition: .21s
+    flex-shrink: 0
+
+    &._rotated-270
+      transform: rotateZ(270deg)
+
+    &._rotated-90
+      transform: rotateZ(90deg)
+
+    @media(hover: hover)
+      @at-root #{$Checkbox}:hover svg
+        fill: rgb(96, 147, 222)
+
+    @at-root #{$Checkbox}._active svg
+      fill: rgb(96, 147, 222)

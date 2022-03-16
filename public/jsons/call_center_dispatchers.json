@@ -1,0 +1,64 @@
+{
+  "interface": {
+    "filter_words": {
+      "phone": ["On", "Off"],
+      "softphone": ["On", "Off"],
+      "active": ["Yes", "No"]
+    },
+    "max_pages": 1,
+    "rows_start": 1,
+    "rows_end": 3,
+    "rows_all": 3
+  },
+  "permissions": {
+    "show_dispatcher": true,
+    "add_dispatcher": true
+  },
+  "dispatchers": [
+    {
+      "dispatcher_id": "88888001fd67db3si1",
+      "name": "Sofi",
+      "user": "Sofi Gray",
+      "phone": "(454) 454-5555",
+      "is_phone": true,
+      "is_softphone": false,
+      "groups": "Standart,Texas",
+      "active": "Active"
+    },
+    {
+      "dispatcher_id": "88888001fd67db3si2",
+      "name": "Mary",
+      "user": "Mary Gray",
+      "phone": "(454) 454-5595",
+      "is_phone": true,
+      "is_softphone": false,
+      "groups": "Standart,Texas,Customer Service",
+      "active": "Inactive"
+    },
+    {
+      "dispatcher_id": "88888001fd67db3si3",
+      "name": "Alex",
+      "user": "Alex Gray",
+      "phone": "(455) 454-5595",
+      "is_phone": true,
+      "is_softphone": true,
+      "groups": "Standart",
+      "active": "Inactive"
+    }
+  ],
+  "edit": {
+    "users": [{
+      "user_id": "88888001fd67db3si1",
+      "user": "Sofi Gray"
+    },
+    {
+      "user_id": "88888001fd67db3si2",
+      "user": "Mary Gray"
+    },
+    {
+      "user_id": "88888001fd67db3si3",
+      "user": "Alex Gray"
+    }
+  ]
+}
+}

@@ -1,0 +1,44 @@
+.AudioPlayer
+  display: flex
+  align-items: center
+  gap: 10px
+  background: rgb(123, 123, 125)
+  color: #fff
+  border-radius: 5px
+  padding: 15px
+
+  & > button
+    flex-shrink: 0
+
+    svg
+      fill: #fff !important
+
+  .player-seeker
+    position: relative
+    width: 100%
+    height: 5px
+    border-radius: 2.5px
+    background: #BCBCBC
+    cursor: pointer
+
+    .seeker-progress
+      height: 100%
+      border-radius: 2.5px
+      background: #fff
+      transition: .21s
+
+    .seeker-notch
+      position: absolute
+      top: 0
+      width: 15px
+      height: 15px
+      background: #fff
+      transition: .21s
+      border-radius: 50%
+      transform: translate(-50%, calc(-50% + 2.75px))
+      pointer-events: none
+
+  .time
+
+    &:last-of-type
+      opacity: .7

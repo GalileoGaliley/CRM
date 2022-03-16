@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "edit_call_settings": true
+  },
+  "call_settings": {
+    "active": true,
+    "twilio_account_sid": "FR554gFBEFEEGEREFEREVEVETV",
+    "twilio_call_token": "Yvjf8jjhkeferf5g5g5g5gg",
+    "twilio_token": "vrhjkthelfkeklrf98545h",
+    "created_at": "05/04/2021 09:32am",
+    "created_by": "Alex",
+    "last_edited_at": "05/04/2021 10:34am",
+    "last_edited_by": "Alex"
+  }
+}
